@@ -9,7 +9,6 @@
 
 <body>
 
-  <!-- HEADER / NAVIGATION -->
   <header class="site-header">
     <div class="container nav">
       <div class="logo">Robbie Jeng</div>
@@ -22,11 +21,12 @@
     </div>
   </header>
 
-  <!-- HOME / BRAND POSITIONING + HEADSHOT -->
+  <!-- HERO SECTION WITH SMALLER HEADSHOT -->
   <main id="home" class="hero">
-    <div class="container hero-grid">
+    <div class="container" style="display:grid; grid-template-columns: 1.3fr 0.7fr; gap:32px; align-items:center;">
 
-      <div class="hero-text">
+      <!-- TEXT -->
+      <div>
         <h1>
           Mechanical Engineer and Engineering MBA candidate specializing in operations,
           analytics, and capital project execution within energy and infrastructure.
@@ -37,14 +37,23 @@
         </p>
       </div>
 
-      <div class="hero-image">
-        <img src="headshot.jpg" alt="Robbie Jeng professional headshot">
+      <!-- HEADSHOT -->
+      <div style="text-align:right;">
+        <img
+          src="headshot.jpg"
+          alt="Robbie Jeng professional headshot"
+          style="
+            width: 100%;
+            max-width: 180px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+          "
+        >
       </div>
 
     </div>
   </main>
 
-  <!-- ABOUT / PERSONAL NARRATIVE -->
   <section id="about" class="section">
     <div class="container">
       <h2>About</h2>
@@ -89,7 +98,6 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE / PROOF OF COMPETENCE -->
   <section id="experience" class="section alt">
     <div class="container">
       <h2>Experience & Projects</h2>
@@ -133,16 +141,13 @@
     </div>
   </section>
 
-  <!-- CONTACT / CTA -->
   <section id="contact" class="section alt">
     <div class="container">
       <h2>Contact</h2>
-
       <p>
         I am open to conversations regarding engineering, operations, and business-focused
         roles within energy and infrastructure.
       </p>
-
       <p>
         <strong>Email:</strong> robbiejeng@tamu.edu<br>
         <strong>LinkedIn:</strong>
